@@ -28,7 +28,7 @@ class Field extends StatelessWidget {
             },
             validator: (String val) {
               if (val.isEmpty) return 'Please enter some text';
-              if (!isAlpha(val)) return 'Cannot have numbers';
+              if (!isAlpha(val)) return 'Must be letters only';
               return null;
             },
           ),
